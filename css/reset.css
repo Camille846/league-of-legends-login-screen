@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --grey: #ededed;
+    --text-color: #111111;
+    --light-text-color: #525252;
+    --blue: #1877f2;
+    --red: #d13639;
+    --border-color: #e8e8e8;
+    --white: #f9f9f9;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body{
+    background-color: var(--white);
+    min-height: 100vh;
+    background-image: url(/assets/images/wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+}
+
+button{
+    outline: none;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+}

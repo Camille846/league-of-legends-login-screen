@@ -1,0 +1,131 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+.wrapper{
+    margin-top: 1rem;
+    padding: 1rem 0;
+
+}
+
+.title{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.input-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.login-input{
+    outline: none;
+    border: none;
+    padding: 1rem;
+    background-color: var(--grey);
+    width: 100%;
+}
+
+.login-input::placeholder{
+    color: var(--light-text-color);
+    color: #232323;
+    text-transform: uppercase;
+    white-space: 12px;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.icon-btn{
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.1875rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.icon-btn:hover{
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.icon-btn img{
+    width: 20px;
+}
+
+.buttons .fb{
+    background-color: var(--blue);
+}
+
+.buttons .fb:hover{
+    background-color: #0966de;
+}
+
+.buttons .apple{
+    background-color: var(--text-color);
+}
+
+.login-chk_label{
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    font-size: .9em;
+    font-weight: 500;
+}
+
+.login-chk_input{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: var(--grey);
+    border-radius: 3px;
+}
+.login-chk_input:checked{
+    background-color: var(--red);
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+.login-link{
+    color: var(--light-text-color);
+    font-size: .6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.login-link:hover{
+    color: var(--text-color);
+}
