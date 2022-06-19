@@ -1,9 +1,6 @@
-/* main{
+main{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
+}
 
 
 .logo-img{
@@ -14,7 +11,7 @@
     background-color: var(--white);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 500px;
@@ -24,7 +21,7 @@
 
 .wrapper{
     padding: 1rem 0;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .title{
@@ -153,4 +150,13 @@
 
 .login-link:hover{
     color: var(--text-color);
+}
+
+.wallpaper{
+    width: 100%;
+    background-image: url("/assets/images/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
 }
