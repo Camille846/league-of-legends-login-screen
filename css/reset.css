@@ -2,7 +2,7 @@
 
 :root{
     --grey: #ededed;
-    --text-color: #111111;
+    --text-color: #343434;
     --light-text-color: #525252;
     --blue: #1877f2;
     --red: #d13639;
@@ -20,16 +20,12 @@
 body{
     background-color: var(--white);
     min-height: 100vh;
-    background-image: url(/assets/images/wallpaper.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     color: var(--text-color);
 }
 
-button{
+button, input{
     outline: none;
     border: none;
 }
