@@ -8,19 +8,26 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/images/logo.png" alt="" class="logo-img">
-        </div>
-    </header>
     <main>
+        <section class="wallpaper">
+            <!-- <img src="assets/images/wallpaper.jpg" alt=""> -->
+        </section>
         <section class="login">
+            <header>
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="" class="logo-img">
+                </div>
+            </header>
             <div class="wrapper">
                 <h1 class="title">Iniciar sessão</h1>
-                <div class="input-content">
-                    <input type="text" class="login-input" placeholder="Nome de usuário">
-                    <input type="text" class="login-input" placeholder="Senha">
-                </div>
+                <label class="login__label">
+                    <span id="login-span">Nome de usuário</span>
+                    <input type="text" name="username" class="login-input">
+                </label>
+                <label class="login__label">
+                    <span id="login-span">Senha</span>
+                    <input type="text" name="password" class="login-input">
+                </label>
                 <div class="buttons">
                     <button href="" class="icon-btn fb"><img src="assets/images/facebook-icon.png" alt=""></button>
                     <button href="" class="icon-btn google"><img src="assets/images/google-icon.png" alt=""></button>
