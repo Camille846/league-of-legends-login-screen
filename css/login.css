@@ -1,8 +1,13 @@
-main{
+/* main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+} */
+
+
+.logo-img{
+    width: 130px;
 }
 
 .login{
@@ -11,19 +16,18 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 25rem;
-    margin-top: 2rem;
-    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+    padding: clamp(35px, 8%, 70px);
 }
 
 .wrapper{
-    margin-top: 1rem;
     padding: 1rem 0;
-
+    margin-top: 2rem;
 }
 
 .title{
-    margin-top: 4rem;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -34,21 +38,42 @@ main{
     row-gap: 1rem;
 }
 
-.login-input{
-    outline: none;
-    border: none;
-    padding: 1rem;
-    background-color: var(--grey);
+.login__label{
+    margin-bottom: 1.25rem;
     width: 100%;
+    display: block;
 }
 
-.login-input::placeholder{
-    color: var(--light-text-color);
-    color: #232323;
-    text-transform: uppercase;
-    white-space: 12px;
+.login__label span{
+    position: absolute;
+    font-size: .8em;
     font-weight: 700;
-    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--light-text-color);
+    margin: 1.25rem;
+    cursor: text;
+    transition: all .2s ease;
+}
+
+.login-input{
+    width: 100%;
+    background-color: var(--grey);
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    font-size: 0.9em;
+    padding: 25px 10px 10px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.login-input:focus{
+    background-color: var(--white);
+    border: 2px solid var(--text-color);
+}
+
+.login__label .span-active{
+    font-size: 0.7em;
+    margin: .5rem .625rem;
 }
 
 .buttons{
@@ -88,7 +113,7 @@ main{
 }
 
 .buttons .apple{
-    background-color: var(--text-color);
+    background-color: #111111;
 }
 
 .login-chk_label{
