@@ -5,6 +5,7 @@ main{
 /* Logo */
 .logo-img{
     width: 130px;
+    margin-top: 1rem;
 }
 
 /* Login section */
@@ -220,7 +221,7 @@ main{
 
 .wallpaper{
     width: 100%;
-    background-image: url("/assets/images/wallpaper.jpg");
+    background-image: url("assets/images/wallpaper.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
