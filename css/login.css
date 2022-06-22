@@ -2,11 +2,12 @@ main{
     display: flex;
 }
 
-
+/* Logo */
 .logo-img{
     width: 130px;
 }
 
+/* Login section */
 .login{
     background-color: var(--white);
     display: flex;
@@ -22,6 +23,10 @@ main{
 .wrapper{
     padding: 1rem 0;
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .title{
@@ -151,6 +156,53 @@ main{
 .login-link:hover{
     color: var(--text-color);
 }
+
+.login-btn{
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--grey);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/* Nxt-btn able and disable style */
+
+.nxt-btn{
+    width: 60px;
+    height: 60px;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+}
+
+.nxt-btn svg{
+    fill: var(--white);
+}
+
+.nxt-btn:hover{
+    background-color: var(--red-hover);
+}
+
+.nxt-btn:disabled{
+    cursor: auto;
+    background-color: var(--white);
+    border: 2px solid var(--grey);
+}
+
+.nxt-btn:disabled svg{
+    fill: var(--grey);
+}
+
+
+/* Wallpaper section */
 
 .wallpaper{
     width: 100%;
