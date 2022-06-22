@@ -27,3 +27,22 @@ loginInput.forEach((input)=>{
 loginInput.forEach((input)=>{
     input.addEventListener("focusout", handleFocusOut)
 })
+
+
+// Aplicar e remover atributo disabled no nxt-btn
+const button = document.querySelector('.nxt-btn');
+
+const handleChange = () =>{
+    const [username, password] = loginInput;
+
+    if (username.value && password.value.length >= 8) {
+        button.removeAttribute("disabled");
+    } else{
+        button.setAttribute("disabled", "");
+    }
+}
+
+// Adicionar evento para adicionar a classe de acordo com as condicionais 
+loginInput.forEach((input)=>{
+    input.addEventListener("input", handleChange)
+})
