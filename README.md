@@ -8,4 +8,4 @@
  - Javascript
 
 ## UI Design
-![image](https://user-images.githubusercontent.com/83260908/175160998-cac62c81-686c-4d63-be61-12764bf6663f.png)
+![image](https://user-images.githubusercontent.com/83260908/175163503-f2731f0c-e82f-46d2-bfd5-1496da32df6b.png)
